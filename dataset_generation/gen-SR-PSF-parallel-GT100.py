@@ -45,8 +45,8 @@ dataset_id = 1
 dataset_id_str = '%03d'%(dataset_id)
 
 # This list must be in order from bigger to smaller
-n_star_list = [52]
-n_test_stars = 20 
+n_star_list = [52000]
+n_test_stars = 20000 
 # Total stars
 n_stars = n_star_list[0] + n_test_stars
 # Max train stars
@@ -213,9 +213,11 @@ print('\nStar positions selected')
 n_procs = n_stars*len(WFE_resolutions)
 
 # Print some info
-cpu_info = ' - Number of available CPUs: {}'.format(n_cpus)
+cpu_info = ' - Number of available CPUs: {}'.format(cpu_count())
+cpu_use = ' - Number of selected CPUs: {}'.format(n_cpus)
 proc_info = ' - Total number of processes: {}'.format(n_procs)
 print(cpu_info)
+print(cpu_use)
 print(proc_info)
 
 # Generate star list
