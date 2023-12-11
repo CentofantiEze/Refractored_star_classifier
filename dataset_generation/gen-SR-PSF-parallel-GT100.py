@@ -32,7 +32,7 @@ ref_test  = 'test_Euclid_res_id_001.npy'
 #selected_id_SED_path = 'selected_id_SED.npy'
 
 # Number of cpus to use for parallelization
-n_cpus = 30 #verify that it doesn't reach the N of actual CPUs
+n_cpus = 32 #verify that it doesn't reach the N of actual CPUs
 
 # Save output prints to logfile
 old_stdout = sys.stdout
