@@ -15,7 +15,7 @@ export PSFDIR="$WORK/wf-psf"
 # Activate conda environment
 module load anaconda
 source activate $ANACONDA_DIR
-conda activate tf-gpu
+conda activate wavediff
 
 # echo des commandes lancees
 set -x
