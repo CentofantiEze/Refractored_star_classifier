@@ -13,8 +13,8 @@ import sys
 import time
 
 # Paths
-wf_psf_dir = '/Users/ec270266/Documents/Phd/Euclid/dev/wf-psf/'
-output_dir = '/Users/ec270266/Documents/Phd/Euclid/dev/output/'
+wf_psf_dir = '/feynman/work/dap/lcs/ec270266/wf-psf/'
+output_dir = '/feynman/work/dap/lcs/ec270266/output/'
 # SED folder path
 # SED_path = '/feynman/work/dap/lcs/ec270266/wf-psf/data/SEDs/save_SEDs/'
 # SED_path = '/feynman/home/dap/lcs/as274094/work/wf-psf/data/SEDs/save_SEDs/'
@@ -22,7 +22,7 @@ SED_path = wf_psf_dir+'data/SEDs/save_SEDs/'
 
 # Output saving path (in node05 of candide or $WORK space on feynman)
 # output_folder = '/feynman/work/dap/lcs/ec270266/output/interp_SEDs/'
-output_folder = output_dir+'psf_dataset1/'
+output_folder = output_dir+'psf_dataset/'
 
 # Reference dataset PATH
 # reference_data = '../interp_SED_data/reference_dataset/'
@@ -32,7 +32,7 @@ ref_test  = 'test_Euclid_res_id_001.npy'
 #selected_id_SED_path = 'selected_id_SED.npy'
 
 # Number of cpus to use for parallelization
-n_cpus = 10 #verify that it doesn't reach the N of actual CPUs
+n_cpus = 64 #verify that it doesn't reach the N of actual CPUs
 
 # Save output prints to logfile
 old_stdout = sys.stdout
@@ -41,7 +41,7 @@ sys.stdout = log_file
 print('Starting the log file.')
 
 # Dataset ID
-dataset_id = 2
+dataset_id = 1
 dataset_id_str = '%03d'%(dataset_id)
 
 # This list must be in order from bigger to smaller
