@@ -46,7 +46,7 @@ dataset_id_str = '%03d'%(dataset_id)
 
 # This list must be in order from bigger to smaller
 n_star_list = [52000]
-n_test_stars = 20000 
+n_test_stars = 20000
 # Total stars
 n_stars = n_star_list[0] + n_test_stars
 # Max train stars
