@@ -319,7 +319,7 @@ rand_SNR_test = (np.random.rand(n_test_stars) * 380) + 20
 test_stars = np.copy(np.array(poly_psf_multires[0])[tot_train_stars:, :, :])
 # Add Gaussian noise to the observations
 noisy_test_stars = np.stack([wf_psf.utils.utils.add_noise(_im, desired_SNR=_SNR) 
-                              for _im, _SNR in zip(train_stars, rand_SNR_test)], axis=0)
+                              for _im, _SNR in zip(test_stars, rand_SNR_test)], axis=0)
 # Generate Gaussian noise patterns to be shared over all datasets (but not every star)
 noisy_test_patterns = noisy_test_stars - test_stars
 
