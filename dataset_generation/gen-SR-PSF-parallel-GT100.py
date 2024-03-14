@@ -41,7 +41,7 @@ sys.stdout = log_file
 print('Starting the log file.')
 
 # Dataset ID
-dataset_id = 4
+dataset_id = 3
 dataset_id_str = '%03d'%(dataset_id)
 
 # This list must be in order from bigger to smaller
@@ -70,9 +70,9 @@ output_dim = 32
 LP_filter_length = 2
 euclid_obsc = True
 
-snr_max = 50
-snr_min = 10
-SNR_label = '_SNR_LOW'
+snr_max = 100
+snr_min = 20
+SNR_label = '_SNR_MID'
 
 # Values for getting 3xEuclid_resolution PSFs outputs.
 original_out_Q = output_Q
